@@ -17,6 +17,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //创建程序窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];//利用设备内部屏幕的bounds来创建window
+    //创建UITabBarController
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    //创建UIViewController对象
+    UIViewController *firstController = [[UIViewController alloc] init];
+    firstController.view.backgroundColor = [UIColor redColor];
+    //设置它的Item
+    UITabBarItem *firstItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemHistory tag:0];
+    firstController.tabBarItem = firstItem;
+    
+    UIViewController *secondController = [[UIViewController alloc] init];
+    secondController.view.backgroundColor = [UIColor greenColor];
+    UITabBarItem *secondItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemDownloads tag:1];
+    secondController.tabBarItem = secondItem;
+    
+    UIViewController *thirdController = [[UIViewController alloc] init];
+    thirdController.view.backgroundColor = [UIColor grayColor];
+    UITabBarItem *thirdItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:2];
+    thirdController.tabBarItem = thirdItem;
+    //设置UIViewController的viewController属性
+    tabBarController.viewControllers = @[firstController,secondController,thirdController];//有几个添加几个
+    //设置窗口的根控制器
+    self.window.rootViewController = tabBarController;
+    //设置window为主窗口并显示
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
