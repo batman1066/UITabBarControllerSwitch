@@ -427,8 +427,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCBJ7R8EST;
 				INFOPLIST_FILE = UITabBarControllerSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hehe.UITabBarControllerSwitch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangming.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,8 +440,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCBJ7R8EST;
 				INFOPLIST_FILE = UITabBarControllerSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hehe.UITabBarControllerSwitch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangming.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -514,6 +516,7 @@
 				8CE29CC31DF4060000113227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CE29CC41DF4060000113227 /* Build configuration list for PBXNativeTarget "UITabBarControllerSwitchTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +525,7 @@
 				8CE29CC61DF4060000113227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CE29CC71DF4060000113227 /* Build configuration list for PBXNativeTarget "UITabBarControllerSwitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +534,7 @@
 				8CE29CC91DF4060000113227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
